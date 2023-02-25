@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cigars</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cigars</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="cigar-wrapper">
+        <div class="cigars" id="cigar">
+            <p id="num_cigars">Number of Cigars: 10</p>
+            <p id="price" onload=get_price()></p>
+            <button type="button" id="buy_btn" onclick="cigar_bought()">Buy</button>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/cigars.js"></script>
+</body>
+
+</html>
