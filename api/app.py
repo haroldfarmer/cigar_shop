@@ -1,12 +1,13 @@
 from flask import Flask, request, redirect
+from flask_cors import CORS
 import db_api
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/get')
 def get_cigar():
     test = request.args.get('brand')
-    print(test)
     results = db_api.query_cigars(brand=test)
     return results
 
