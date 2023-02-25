@@ -43,8 +43,3 @@ def query_cigars(id:int=None, brand:str=None, size:str=None) -> list:
         return result.fetchall()
     except sqlite3.Error as er:
         print(er)
-
-
-print(query_cigars(brand='My Father'))
-print(query_cigars(brand='My Father', size="Toro"))
-print(query_cigars(size='Toro'))
