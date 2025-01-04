@@ -1,0 +1,11 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
+    gap: 15px 10px;
+}

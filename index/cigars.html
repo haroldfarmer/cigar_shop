@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Cigars</title>
+    <link rel="stylesheet" href="../styles/cigar.css" <title>Cigars</title>
 </head>
 
 <body>
@@ -20,14 +19,75 @@
         </ul>
     </nav>
 
-    <section class="cigar-wrapper">
-        <div class="cigars" id="cigar">
-            <p id="num_cigars">Number of Cigars: 10</p>
-            <p id="price" onload=get_price()></p>
-            <button type="button" id="buy_btn" onclick="cigar_bought()">Buy</button>
+    <div class="container">
+        <div class="item item-1"><img src="../imgs/8448c46a-4be8-4fd3-9856-d4e1267fa955-247x296.jpeg" width="247" ,
+                height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="first">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="first" onclick="cigarBought('first')">Buy</button>
+                </div>
+            </section>
         </div>
-    </section>
-    
+        <div class="item item-2"><img src="../imgs/aganorsa_lead.jpeg" width="247" , height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="second">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="second" onclick="cigarBought('second')">Buy</button>
+                </div>
+            </section>
+        </div>
+        <div class="item item-3"><img src="../imgs/AJ-Fernandez-Bellas-Artes-Natural-Robusto-247x296.jpg" width="247" ,
+                height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="third">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="third" onclick="cigarBought('third')">Buy</button>
+                </div>
+            </section>
+        </div>
+        <div class="item item-1"><img src="../imgs/8448c46a-4be8-4fd3-9856-d4e1267fa955-247x296.jpeg" width="247" ,
+                height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="fourth">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="fourth" onclick="cigarBought('fourth')">Buy</button>
+                </div>
+            </section>
+        </div>
+        <div class="item item-2"><img src="../imgs/aganorsa_lead.jpeg" width="247" , height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="fifth">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="fifth" onclick="cigarBought('fifth')">Buy</button>
+                </div>
+            </section>
+        </div>
+        <div class="item item-3"><img src="../imgs/AJ-Fernandez-Bellas-Artes-Natural-Robusto-247x296.jpg" width="247" ,
+                height="296">
+            <section class="cigar-wrapper">
+                <div class="cigars" id="cigar">
+                    <p>Aganorsa Leaf Aniversario Connecticut Robosto (5x54)</p>
+                    <p id="sixth">Number of Cigars: 10</p>
+                    <p id="price" onload=get_price()></p>
+                    <button type="button" id="sixth" onclick="cigarBought('sixth')">Buy</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
 
     <footer>
         <div class="footer-content">
@@ -38,26 +98,15 @@
             </p>
 
             <ul class=”socials”>
-                <li><a href=”#”><img source="../icons/svgs/brands/facebook-f.svg"></img></a></li>
-                <li><a href=”#”><i class=”fa fa-twitter” aria-hidden="true"></i></a></li>
-                <li><a href=”#”><i class=”fa fa-google-plus”></i></a></li>
-                <li><a href=”#”><i class=”fa fa-youtube”></i></a></li>
-                <li><a href=”#”><i class=”fa fa-linkedin-square”></i></a></li>
+                <li><a href=”#”><i class="fa fa-facebook"></i></a></li>
+                <li><a href=”#”><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=”#”><i class="fa fa-youtube"></i></a></li>
+                <li><a href=”#”><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
 
         <div class=”footer-bottom”>
-
-
             <p>copyright &copy;2021 <a href=”#”>Big Thick Cigars</a> </p>
-            <div class=”footer-menu”>
-                <ul class=”f-menu”>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Cigars</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
         </div>
     </footer>
 
@@ -65,5 +114,6 @@
     </div>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../js/cigars.js"></script>
+<script src="../js/cigars.js"></script>
+
 </html>
